@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemrograman Web</title>
+    <link rel="stylesheet" href="pemrograman.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="nav-bar">
+        <div class="logo">🍁SFZ🍁</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="pemrograman-web.html" class="active">Pemrograman Web</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <h1>Pemrograman Berbasis Website</h1>
+    <div class="cards">
+        <div class="card" onclick="openModal('modal1')">
+            <h2>Pertemuan 1: HTML & CSS</h2>
+            <button>Read More</button>
+        </div>
+        <div class="card" onclick="openModal('modal2')">
+            <h2>Pertemuan 2: JavaScript</h2>
+            <button>Read More</button>
+        </div>
+        <div class="card" onclick="openModal('modal3')">
+            <h2>Pertemuan 3: PHP Dasar</h2>
+            <button>Read More</button>
+        </div>
+        <div class="card" onclick="openModal('modal4')">
+            <h2>Pertemuan 4: Percabangan</h2>
+            <button>Read More</button>
+        </div>
+        <div class="card" onclick="openModal('modal5')">
+            <h2>Pertemuan 5: Perulangan</h2>
+            <button>Read More</button>
+        </div>
+        <div class="card" onclick="openModal('modal6')">
+            <h2>Pertemuan 6: Array</h2>
+            <button>Read More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Modals -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Pertemuan 1: HTML & CSS</h2>
+        <p>HTML adalah singkatan dari HyperText Markup Language. HTML digunakan untuk membuat struktur halaman web, sedangkan CSS digunakan untuk mendesain tampilannya.</p>
+        <img src="html.jpg" alt="Foto Profil" class="profile-img">
+        <img src="css.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Pertemuan 2: JavaScript</h2>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif.</p>
+        <img src="javaScript.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Pertemuan 3: Pengenalan PHP</h2>
+        <p>PHP adalah bahasa pemrograman server-side yang digunakan untuk membangun website dinamis.</p>
+        <img src="php.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <h2>Pertemuan 4: Percabangan</h2>
+        <p>Mempelajari struktur kontrol seperti percabangan dalam pemrograman.</p>
+        <img src="percabangan.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <h2>Pertemuan 5: Perulangan</h2>
+        <p>Memahami konsep loop seperti for,foreach, while, dan do-while dalam pemrograman.</p>
+        <img src="perulangan.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <h2>Pertemuan 6: Array</h2>
+        <p>Array adalah varibel tempat menyimpan beberapa nilai.</p>
+        <img src="array.jpg" alt="Foto Profil" class="profile-img">
+    </div>
+</div>
+
+</body>
+</html>

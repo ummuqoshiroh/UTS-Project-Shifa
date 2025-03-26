@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ece5da;
+    color: #333;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b8a896;
+    padding: 15px 50px;
+}
+
+.nav-bar .logo {
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-left: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #84634a;
+    text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+}
+
+.nav-bar ul li a.active {
+    color: #e9d6b2;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+.container h1{
+    color: #84634a;
+    margin-bottom: 40px;
+}
+.cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+.card h2{
+    color: #daa05e;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.modal img {
+    margin-top: 20px;
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 20%;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.card button{
+    margin-top: 30px;
+    color: #84634a;
+    background-color: #e9d6b2;
+    border-color: #e9d6b2;
+}

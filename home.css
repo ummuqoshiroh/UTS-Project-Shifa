@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ece5da;
+    color: #333;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b8a896;
+    padding: 15px 50px;
+}
+
+.nav-bar .logo {
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin-left: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Efek hover - membuat teks bercahaya */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: 0.3s; /* Animasi perubahan */
+}
+
+nav ul li a:hover {
+    color: #84634a; /* Warna saat hover */
+    text-shadow: 0px 0px 10px #6d4c41(255, 255, 0, 0.8); /* Efek nyala */
+}
+
+/* Warna untuk menu yang sedang aktif */
+nav ul li a.active {
+    color: #e9d6b2; /* Warna saat halaman aktif */
+    font-weight: bold;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #dfd4c3;
+}
+
+.hero-text {
+    max-width: 800px; /* Lebar maksimum */
+    margin: 0 auto; /* Pusatkan */
+}
+.hero-text h2{
+    font-size: 1.2em; /* Ukuran lebih kecil dari h2 */
+    font-weight: bold;
+    margin-top: 20px;
+       color: #876e4b !important;  /* Coklat pastel */
+    margin-top: 20px;
+}
+
+.hero-text p, .informasi p, .overview p {
+text-align: justify;
+}
+
+.overview ul {
+    margin-left: 30px; /* Geser ke kanan */
+    padding-left: 20px; /* Jarak lebih rapi */
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    color: #876e4b !important;  /* Coklat pastel */
+    text-align: center;
+}
+
+
+.hero-image {
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero-image img {
+    border-radius: 5px;
+    width: 350px;
+    height: auto;
+}
+
+.sub-section {
+    text-align;
+    background: #b8a896;
+    padding: 50px;
+
+    display: flex;
+    justify-content: space-between; /* Membuat jarak antara skill & pengalaman */
+    gap: 20px; /* Jarak antar elemen */
+    padding: 20px;
+}
+
+
+.skill, .pengalaman{
+     width: 48%; /* Agar keduanya proporsional */
+    background: #f8f0e3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.skill ul, .pengalaman ul {
+    margin-left: 40px; /* Geser ke kanan */
+    padding-left: 20px; /* Tambahkan jarak dari kiri */
+}
+
+.informasi, .overview {
+    background-color: white; /* Background tetap putih */
+    color: #5C4B40; /* Warna coklat soft agar lebih harmonis */
+    padding: 20px;
+    margin: 8px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 15px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <div class="logo">🍁SFZ🍁</div>
+        <nav>
+          <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="pemrograman-web.html">Pemrograman Web</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>🍁Selamat Datang di Website Saya 🍁</h1>
+
+        <h2>Tentang Saya</h2>
+        <div class="informasi">
+          <p>
+            Saya Shifa Fanisatuz Zahra, seorang mahasiswa Informatika dari Universitas Singaperbangsa Karawang yang
+            memiliki minat dalam pengembangan web dan teknologi.
+          </p>
+        </div>
+
+        <h2>Overview Website</h2>
+        <div class="overview">
+          <p>
+            Website ini berisi berbagai informasi tentang saya, termasuk pengalaman, proyek, dan pembelajaran mata kuliah Pemrograman Berbasis Website. Berikut beberapa hal yang bisa kamu temukan di website ini:</p>
+            
+            <ul>
+                <li>Home – Catatan-catatan singkat mengenai saya & website ini.</li>
+                <li>Kontak – Informasi untuk menghubungi saya.</li>
+                <li>About Me – Informasi singkat tentang saya.</li>
+                <li>Pemrograman Web – Materi dari mata kuliah Pemrograman Berbasis Website dari pertemuan 1-6.</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="foto.jpg" alt="Image" />
+      </div>
+    </section>
+
+    <section class="sub-section">
+      <div class="skill">
+      <h2>Skill</h2>
+      <ul>
+        <li>Pemrograman: Java, Python, SQL, HTML, CSS, JavaScript</li>
+        <li>Database: MySQL</li>
+        <li>Jaringan & Keamanan: Cisco Packet Tracer, PGP Encryption</li>
+        <li>Tools: NetBeans, VS Code, Octave</li>
+      </ul>
+      </div>
+
+      <div class="pengalaman">
+      <h2 text-align="center">Pengalaman</h2>
+      <ul>
+            <li>Sistem Reservasi Hotel – Aplikasi berbasis OOP untuk pemesanan hotel.</li>
+            <li>Sistem Pengelolaan Laundry – Proyek hasil wawancara dengan bisnis laundry.</li>
+            <li>Jurnal Penelitian</b> – Studi kasus terkait pengelolaan ekspedisi.</li>
+            <li>Cisco Networking</b> – Simulasi jaringan menggunakan Packet Tracer.</li>
+        </ul>
+      </div>
+    
+    </section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Ambil semua link di dalam navbar
+    let links = document.querySelectorAll("nav ul li a");
+
+    // Dapatkan nama halaman dari URL
+    let currentPage = window.location.pathname.split("/").pop();
+
+    // Loop melalui setiap link dan tambahkan class active jika sesuai
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+    });
+
+    </script>
+  </body>
+</html>
